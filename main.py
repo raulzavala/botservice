@@ -4,8 +4,7 @@ from llama_index import SimpleDirectoryReader, LangchainEmbedding, GPTListIndex,
 from llama_index import LLMPredictor, ServiceContext
 import os
 
-db_server = os.environ['OPENAI_API_KEYB']
-os.environ["OPENAI_API_KEY"] = db_server
+os.environ["OPENAI_API_KEY"] = "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"
 app = Flask(__name__)
 
 @app.post("/predict")
